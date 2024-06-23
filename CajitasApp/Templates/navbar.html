@@ -1,0 +1,57 @@
+<section class="header-top">
+    <style>
+        .header-top {
+            background-color: #ff9822;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .header-top ul {
+            list-style: none;
+            padding: 0;
+        }
+        .header-top ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .header-top .icon a {
+            margin-right: 10px;
+            color: #000;
+        }
+        .header-top .a-right a {
+            margin-right: 10px;
+            color: #000;
+        }
+        body {
+            padding-top: 60px; /* To ensure content doesn't hide behind the fixed navbar */
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li><a href="#">Mis Cajas</a></li>
+                    <li><a href="#">Mensajes</a></li>
+                    <li><a href="#">Panel</a></li>
+                    <li><a href="#">Demostracion</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="icon">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-twitter"></i></a>
+                   <a href="#"><i class="fa fa-google-plus"></i></a>
+                   <a href="#"><i class="fa fa-linkedin"></i></a>
+                   <a href="#"><i class="fa fa-wifi"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+               <div class="a-right">
+                    <a href="#"><p><span><i class="fa fa-user"></i></span>Loguear</p></a>
+                    <a href="{% url 'Registrar' %}"><p><span><i class="fa fa-pencil"></i></span>Registrar</p></a>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>

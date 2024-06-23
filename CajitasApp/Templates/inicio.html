@@ -1,0 +1,22 @@
+{% extends 'HOME.html' %}
+
+{% block title %}INICIO{% endblock %}
+
+{% block title2 %}Registrate si todavia no tenes una cuenta!{% endblock %}
+
+{% block slider_title %}Una plataforma diferente, para gente diferente.{% endblock %}
+
+{% block contenidoQueCambia %}
+    
+    <h1>Titulo de Inicio</h1>
+
+    <p>{{message}}</p>
+
+    
+    {% if url  %}
+        <img src="{{url}}" alt="avatar">
+    {% endif %}
+        
+
+{% endblock contenidoQueCambia %}
+    

@@ -1,0 +1,18 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+    <br>
+    <h1>Formulario</h1>
+
+    <form action="{% url 'EditaPerfil' %}" method="post">{% csrf_token %}
+
+        <br>
+        {{miFormulario.as_p}}
+        <br>
+        <button type="submit">Actualizar</button>
+
+    </form>
+    <br>
+
+{% endblock contenidoQueCambia %}
+

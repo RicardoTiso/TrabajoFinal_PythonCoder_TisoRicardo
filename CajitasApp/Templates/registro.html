@@ -1,0 +1,26 @@
+{% extends 'HOME.html' %}
+
+{% block title %}Registro{% endblock %}
+
+{% block title2 %}Formulario de Registro{% endblock %}
+
+{% block slider_title %}Unete a nosotros ahora y comenza tu aventura{% endblock %}
+
+{% block contenidoQueCambia %}
+    <br>
+    <div class="container-formularios">
+    <h1>Registro de Usuario</h1>
+    </div>
+    <div class="container-formularios">
+        <form action="{% url 'Registrar' %}" method="post">{% csrf_token %}
+            <br>
+            {{miFormulario.as_p}}
+            <br>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    <br>
+
+
+{% endblock contenidoQueCambia %}
+
